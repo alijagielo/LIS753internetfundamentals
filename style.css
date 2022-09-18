@@ -1,0 +1,29 @@
+h1 {
+  color: #457a56;
+  font-family: Georgia, serif;
+  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: .125em;
+  text-align: center;
+}
+
+p {
+  background: #d1ded9;
+  font-family: Georgia, serif;
+}
+
+figure {
+  padding: 5px;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  align: center;
+}
+
+p img {
+  float: left;
+  width: 15%;
+  height: auto;
+}
