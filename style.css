@@ -1,5 +1,5 @@
-h1 {
-  color: #457a56;
+h1#site-title {
+  color: mediumvioletred;
   font-family: Georgia, serif;
   font-size: 72px;
   margin-top: 0;
@@ -7,8 +7,26 @@ h1 {
   text-align: center;
 }
 
+h1#article-title {
+font-size: 48px;
+color: mediumvioletred;
+}
+
+h2 {
+  font-size: 32px;
+  color: mediumvioletred;
+  align-content: center;
+}
+
+h3 {
+  font-size: 32px;
+  color: mediumvioletred;
+  float: left;
+  align-content: center;
+}
+
 p {
-  background: #d1ded9;
+  background: #ffffff;
   font-family: Georgia, serif;
 }
 
@@ -22,11 +40,27 @@ figure img {
   align: center;
 }
 
-p img {
-  float: left;
-  width: 15%;
-  height: auto;
+figure.main-image {
+background: PaleVioletRed;
+border-color: mediumvioletred;
 }
+
+figure.section-image {
+margin-bottom: 32px;
+max-width: 320px;
+}
+
+figure.section-image.odd {
+  float: left;
+  margin-right: 20px;
+}
+
+figure.section-image.even {
+  float: right;
+  margin-left: 20px;
+}
+
+
 
 nav ul {
   display: flex;
