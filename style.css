@@ -30,6 +30,11 @@ p {
   font-family: Georgia, serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 figure {
   padding: 5px;
 }
@@ -45,10 +50,13 @@ background: PaleVioletRed;
 border-color: mediumvioletred;
 }
 
-figure.section-image {
-margin-bottom: 32px;
-max-width: 320px;
+@media all and (min-width: 768px) {
+  figure.section-image {
+  margin-bottom: 32px;
+  max-width: 320px;
+  }
 }
+
 
 figure.section-image.odd {
   float: left;
@@ -63,14 +71,18 @@ figure.section-image.even {
 
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
   list-style: none;
   padding-left: 0;
   border-top: : 1px solid mediumvioletred;
   border-bottom: 1px solid mediumvioletred;
 
+}
+
+@media all and (min-width: 376px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 nav ul li {
@@ -91,4 +103,24 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 3px solid mediumvioletred;
   padding-bottom: : 9 px;
+}
+
+footer nav {
+
+}
+
+footer nav ul li a {
+  color: #ffffff;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer#page-footer {
+  padding: 32px 0;
+  margin-top: 64px;
+  text-align: center;
+  background-color: #A1116B;
+  color: #ffffff;
 }
